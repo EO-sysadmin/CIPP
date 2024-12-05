@@ -10,7 +10,7 @@ const AppFooter = () => {
   const isDark =
     currentTheme === 'impact' || (currentTheme === 'default' && preferredTheme === 'impact')
 
-  const datto = isDark ? '/img/datto.png' : '/img/datto.png'
+  const RoB = isDark ? '/img/RoB.svg' : '/img/RoB-light.svg'
   const huntress = isDark ? '/img/huntress_teal.png' : '/img/huntress_teal.png'
   const rewst = isDark ? '/img/rewst_dark.png' : '/img/rewst.png'
   const ninjaone = isDark ? '/img/ninjaone_dark.png' : '/img/ninjaone.png'
@@ -24,20 +24,24 @@ const AppFooter = () => {
           <CLink className="mx-2" href="https://www.huntress.com/" target="_blank">
             <CImage src={huntress} alt="Huntress" />
           </CLink>
-          <CLink className="me-2" href="https://datto.com/" target="_blank">
-            <CImage src={datto} alt="Datto" />
+          <CLink
+            className="me-2"
+            href="https://www.rightofboom.com/rob-2025/register?promo=EarlyBird2025#register"
+            target="_blank"
+          >
+            <CImage src={RoB} alt="RoB" />
           </CLink>
           <CLink className="me-2" href="https://rewst.io/" target="_blank">
             <CImage src={rewst} alt="Rewst" />
           </CLink>
           <CLink
-            className="me-2"
+            className="me-1"
             href="https://www.augmentt.com/?utm_source=cipp&utm_medium=referral&utm_campaign=2024"
             target="_blank"
           >
             <CImage src={augmentt} alt="Augmentt" />
           </CLink>
-          <CLink className="me-2" href="https://ninjaone.com" target="_blank">
+          <CLink className="me-1" href="https://ninjaone.com" target="_blank">
             <CImage src={ninjaone} alt="NinjaOne" />
           </CLink>
         </p>
